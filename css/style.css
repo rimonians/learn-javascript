@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  user-select: none;
+}
+img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
