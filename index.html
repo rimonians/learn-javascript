@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn JavaScript</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
-    <!-- App root start -->
-    <div id="root"></div>
-    <!-- App root end -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Container start -->
+    <div class="container">
+      <!-- Calculator start -->
+      <div class="calculator">
+        <!-- Heading section start -->
+        <div class="heading__section">
+          <h1>Simple Calculator</h1>
+          <p>Calculate everything...</p>
+        </div>
+        <!-- Heading section end -->
+
+        <!-- Input section start -->
+        <div class="input__section">
+          <!-- Input group -->
+          <div class="input__group">
+            <label for="firstNum">Enter first number</label>
+            <input
+              type="number"
+              id="firstNum"
+              placeholder="Enter first number"
+            />
+          </div>
+          <!-- Input group -->
+          <div class="input__group">
+            <label for="secondNum">Enter second number</label>
+            <input
+              type="number"
+              id="secondNum"
+              placeholder="Enter second number"
+            />
+          </div>
+          <!-- Input group -->
+          <div class="input__group">
+            <label for="operator">Select an operator</label>
+            <select id="operator">
+              <option value="">Choose one</option>
+              <option value="+">Addition</option>
+              <option value="-">Substraction</option>
+              <option value="*">Multiplication</option>
+              <option value="/">Division</option>
+            </select>
+          </div>
+          <!-- Input group -->
+          <div class="input__group">
+            <button id="calculate">Calculate</button>
+          </div>
+        </div>
+        <!-- Input section end -->
+
+        <!-- Output section start -->
+        <div class="output__section">
+          <h3 id="result"></h3>
+        </div>
+        <!-- Output section end -->
+      </div>
+      <!-- Calculator end -->
+    </div>
+    <!-- Container end -->
 
     <script src="./js/app.js"></script>
-</body>
+  </body>
 </html>
